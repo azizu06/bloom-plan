@@ -12,6 +12,7 @@ CapCheck is built for short-form content. TikTok, YouTube Shorts, and Reels are 
 2. A progress strip streams what's happening. Fetching video, watching it, extracting claims, checking claim 3 of 7, and so on. This is not cosmetic, streamed progress is what makes the pipeline legible to judges.
 3. Results render as a scorecard. The headline is the **Cap Score**, 0 to 100, with a verdict label that scales from "No cap" through "Some cap" to "Full of cap". Below it, one card per claim with a verdict badge (true / mostly true / unverifiable / false), the evidence, and source links, each source tagged with a trust tier badge.
 4. Below the claims, a hype language section highlights persuasion tactics in the transcript ("guaranteed", "everyone is buying", urgency framing, etc.).
+5. The scorecard ends with a "what you can actually do" section, two or three concrete next steps grounded in the verdicts. Things like "before buying, check the fund's actual 10-year return on the SEC site, here's the link" or "this strategy has real tax consequences, the IRS page on wash sales is here". Stage 4 generates these alongside the score, and they should be actions a normal person can take today, not generic "do your own research" filler.
 
 ## Claim scope
 
