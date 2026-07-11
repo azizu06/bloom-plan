@@ -4,12 +4,15 @@ Two lanes so we don't block each other. Aziz owns Lane A, the whole Gemini pipel
 
 ## Before hack day (do this at home, costs an evening; learning and throwaway scripts only, no app code before hour 0)
 
-- [ ] Both of us get Gemini API keys. Aziz puts a card on his with a 5 to 10 dollar cap and a billing alert, and runs one hello-world generateContent call.
+- [ ] Aziz gets a Gemini API key at aistudio.google.com, puts a card on it with a 5 to 10 dollar cap and a billing alert, and runs one hello-world generateContent call. Only one paid key is needed since the pipeline runs server-side with one key in `.env`. Teammate can grab a free-tier key for poking around, no card needed.
 - [ ] Aziz runs one video through the Files API end to end in a throwaway script, upload, wait for ACTIVE, ask a question about the video. This is the riskiest integration and it should not be a surprise at hour 1. The script does not enter the repo.
-- [ ] Install yt-dlp and confirm it pulls one TikTok link and one YouTube Shorts link on our machines.
-- [ ] Pick and download 3 demo videos, one obviously scammy "10x guaranteed" video, one legit educational one, one mixed. Real videos from big accounts making checkable factual claims, no small creators. Scammy + legit contrast makes the demo land.
-- [ ] Sign up for a Finnhub free key, confirm we can pull a quote.
+- [x] Install yt-dlp and confirm it pulls one TikTok link and one YouTube Shorts link. Done 2026-07-10, yt-dlp 2026.07.04 via Homebrew, verified against YouTube and a TikTok from @humphreytalks. TikTok extraction warns about missing impersonation support. It works today, and if TikTok tightens up the fix is installing yt-dlp's curl-cffi dependency.
+- [ ] Pick and download 3 demo videos, one obviously scammy "10x guaranteed" video, one legit educational one, one mixed. Real videos from big accounts making checkable factual claims, no small creators. Scammy + legit contrast makes the demo land. Legit candidate already found, Humphrey Yang's "5 Signs You're Doing Well Financially in 2026" (89s).
+- [ ] Sign up for a Finnhub free key at finnhub.io, confirm we can pull a quote.
+- [x] Keyless market data fallback verified 2026-07-10. Yahoo's public chart endpoint returns live quotes with no key, so a Finnhub outage is covered.
 - [ ] Confirm the double-dip is legal, i.e. opt in to both challenges on Devpost, and skim the rules on pre-written code so we stay clean.
+
+Pitch ammunition found while testing, use it in the hook. A 2026 report card graded about 70 percent of viral investing videos misleading and 60 percent got an F on risk disclosure (daytrading.com/tiktok/report-card), and over a third of Gen-Z investors cite finfluencers as a factor in starting investing (Nasdaq).
 
 ## The clock
 
